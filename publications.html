@@ -3,18 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Publications</title>
+    <title>Publications - My Personal Website</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        nav {
+            background-color: #333; /* Dark background for the nav bar */
+            overflow: hidden; /* Clear floats */
+        }
+        
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove default margins */
+            padding: 0; /* Remove default padding */
+        }
+        
+        nav ul li {
+            float: left; /* Display list items side by side */
+        }
+        
+        nav ul li a {
+            display: block; /* Make the links fill the list items */
+            color: white; /* White text color */
+            text-align: center; /* Center the text */
+            padding: 14px 20px; /* Padding for clickable area */
+            text-decoration: none; /* Remove underline from links */
+        }
+        
+        nav ul li a:hover {
+            background-color: #ddd; /* Light background on hover */
+            color: black; /* Dark text color on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>My Publications</h1>
-    <p>Here is a list of my selected publications:</p>
-    <ul>
-        <li><strong>Publication Title 1:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li><strong>Publication Title 2:</strong> Phasellus fermentum sapien sit amet metus vulputate.</li>
-        <li><strong>Publication Title 3:</strong> Nullam volutpat velit vitae magna consectetur.</li>
-    </ul>
-    <p>You can find a full list of my publications on <a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank">Google Scholar</a>.</p>
 
-    <p><a href="index.html">Back to Home</a></p>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home -->
+            <li><a href="publications.html">Publications</a></li> <!-- Link to Publications -->
+            <li><a href="cv.html">CV</a></li> <!-- Link to CV -->
+        </ul>
+    </nav>
+
+    <h1>My Publications</h1>
+    <p>Here is a list of my academic publications and research papers:</p>
+
+    <!-- Example of a list of publications -->
+    <ul>
+        <li><a href="https://scholar.google.com">Publication 1 Title</a> - Journal Name, Year</li>
+        <li><a href="https://scholar.google.com">Publication 2 Title</a> - Journal Name, Year</li>
+        <li><a href="https://scholar.google.com">Publication 3 Title</a> - Journal Name, Year</li>
+    </ul>
+
 </body>
 </html>
