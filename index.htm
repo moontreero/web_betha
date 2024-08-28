@@ -4,8 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Website</title>
+    <style>
+        /* Basic styling for the navigation bar */
+        nav {
+            background-color: #333; /* Dark background for the nav bar */
+            overflow: hidden; /* Clear floats */
+        }
+        
+        nav ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove default margins */
+            padding: 0; /* Remove default padding */
+        }
+        
+        nav ul li {
+            float: left; /* Display list items side by side */
+        }
+        
+        nav ul li a {
+            display: block; /* Make the links fill the list items */
+            color: white; /* White text color */
+            text-align: center; /* Center the text */
+            padding: 14px 20px; /* Padding for clickable area */
+            text-decoration: none; /* Remove underline from links */
+        }
+        
+        nav ul li a:hover {
+            background-color: #ddd; /* Light background on hover */
+            color: black; /* Dark text color on hover */
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li> <!-- Link to Home -->
+            <li><a href="publications.html">Publications</a></li> <!-- Link to Publications -->
+            <li><a href="cv.html">CV</a></li> <!-- Link to CV -->
+        </ul>
+    </nav>
+
     <h1>Welcome to My Website!</h1>
     <p>This is my first personal website hosted on GitHub Pages.</p>
 
@@ -14,13 +54,14 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fermentum sapien sit amet metus vulputate, non viverra libero bibendum. Nullam volutpat velit vitae magna consectetur, sit amet aliquet sapien vehicula.</p>
         
         <!-- Adding the image after the "About Me" section -->
-        <img src="Pesca.jpg" alt="Picture of Pesca" style="max-width: 100%; height: auto;">
+        <img src="pesca.jpg" alt="Picture of Pesca" style="max-width: 100%; height: auto;">
     </section>
 
     <section id="publications">
         <h2>Publications</h2>
         <p><a href="publications.html">View my publications</a></p>
     </section>
-    
+
 </body>
 </html>
+
