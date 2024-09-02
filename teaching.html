@@ -45,24 +45,39 @@
             width: 40px; /* Set the width of the logo */
             margin-right: 10px; /* Add some space between the logo and the link */
         }
+
+        /* Center the logo */
+        .logo-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            margin-top: 20px; /* Add space above */
+        }
+
+        .logo-container img {
+            max-width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
 
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li> <!-- Link to Home -->
             <li><a href="research.html">Research</a></li> <!-- Link to Publications -->
             <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
-
         </ul>
     </nav>
     
     <h1>Teaching</h1>
     <h2>Project Jupyter4UU</h2>
     
-  
+    <!-- Logo for Jupyter4UU -->
+    <div class="logo-container">
+        <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo">
+    </div>
 
 </body>
 </html>
