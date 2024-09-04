@@ -10,17 +10,17 @@
             background-color: #333; /* Dark background for the nav bar */
             overflow: hidden; /* Clear floats */
         }
-        
+
         nav ul {
             list-style-type: none; /* Remove bullet points */
             margin: 0; /* Remove default margins */
             padding: 0; /* Remove default padding */
         }
-        
+
         nav ul li {
             float: left; /* Display list items side by side */
         }
-        
+
         nav ul li a {
             display: block; /* Make the links fill the list items */
             color: white; /* White text color */
@@ -28,7 +28,7 @@
             padding: 14px 20px; /* Padding for clickable area */
             text-decoration: none; /* Remove underline from links */
         }
-        
+
         nav ul li a:hover {
             background-color: #ddd; /* Light background on hover */
             color: black; /* Dark text color on hover */
@@ -58,6 +58,14 @@
             height: auto;
         }
 
+        /* Float the image to the top left of the paragraph */
+        .float-image {
+            float: left;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            max-width: 150px; /* Adjust as needed */
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -70,13 +78,21 @@
             <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
         </ul>
     </nav>
-    
+
     <h1>Teaching</h1>
     <h2>Project Jupyter4UU</h2>
-    
-    <!-- Logo for Jupyter4UU -->
-    <div class="logo-container">
-        <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo">
+
+    <!-- Paragraph with floated image -->
+    <div>
+        <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo" class="float-image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. 
+        In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna 
+        diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac 
+        lorem rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a nulla placerat dignissim. Morbi a enim in magna 
+        semper bibendum. Etiam scelerisque, nunc ac egestas consequat, odio nibh euismod nulla, eget auctor orci nibh vel nisi. 
+        Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac 
+        tincidunt a, lacinia vel velit. Aenean facilisis nulla vitae urna tincidunt congue sed ut dui. Morbi malesuada nulla nec 
+        massa maximus, eget rhoncus massa cursus. </p>
     </div>
 
 </body>
