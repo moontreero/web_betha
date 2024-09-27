@@ -71,15 +71,22 @@
         font-family: 'Arial', sans-serif;
         font-size: 18px;
         line-height: 1.6;
-        margin: 20px auto;  /* centers the block */
+        margin: 20px auto;
         padding: 10px;
-        max-width: 700px;    /* limits width for better readability */
-        color: #333;         /* darker grey for a softer look */
-        text-align: justify; /* optional: to justify the text */
+        max-width: 700px;
+        color: #333;
+        text-align: justify;
     }
-    strong {
+    .more-content {
+        display: none;
+    }
+    .read-more-btn {
+        color: #1a73e8;
+        cursor: pointer;
         font-weight: bold;
-        color: #1a73e8;      /* subtle color for emphasis */
+        border: none;
+        background: none;
+        padding: 0;
     }
 
 
@@ -102,13 +109,38 @@
     <!-- Paragraph with floated image -->
     <div>
         <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo" class="float-image">
-        <p>
+        p>
     The <strong>project Jupyter4UU arose from the idea that Uppsala University could benefit from further integrating Jupyter notebooks into its curriculum and research practices</strong>, aligning more closely with the advancements seen globally at other top universities in the world.<br>
-    On this basis, <strong>during the year 2023 I coordinated the Jupyter4UU project</strong>, whose objective was to change this scenario at Uppsala University. Recognizing the potential of Jupyter notebooks to revolutionize teaching and learning, I initiated this project to promote their widespread adoption within our educational community. Through a series of targeted workshops, hands-on training sessions, and the development of accessible resources, my aim has been to equip educators with the skills and knowledge needed to integrate Jupyter notebooks into their courses.<br>
-    Furthermore, Jupyter4UU aimed to <strong>promote the use of open-source tools</strong>, such as Jupyter and Python, over proprietary tools like MATLAB, aligning with both worldwide trends and Uppsala University's policies. This shift is not solely about eliminating paywalls (financial barriers associated with proprietary software), ensuring that all students and educators, regardless of their economic background, have equal access to the necessary technological resources. It is also about the substantial advantages in terms of <strong>accessibility, openness, and reproducibility of results.</strong><br>
-    Indeed, the <strong>transparency</strong> inherent in open-source tools enables an environment of openness, which is critical for scientific research and education. Jupyter notebooks facilitate collaborative efforts across different disciplines and institutions and are, therefore, <strong>crucial skills for the future professional development of our educators and students.</strong><br>
-    By adopting open source tools, we also become <strong>part of a community</strong> that values transparency and shared information. This community-driven approach encourages continuous improvement and innovation, as users can contribute to its development. Engaging with this community helps educators and students stay at the forefront of technological advancements and pedagogical practices, promoting a <strong>culture of lifelong learning and collaboration.</strong>
+
+    <!-- Initial visible part of the text -->
+    On this basis, <strong>during the year 2023 I coordinated the Jupyter4UU project</strong>, whose objective was to change this scenario at Uppsala University. 
+    <span class="dots">...</span>
+    <span class="more-content">
+        Recognizing the potential of Jupyter notebooks to revolutionize teaching and learning, I initiated this project to promote their widespread adoption within our educational community. Through a series of targeted workshops, hands-on training sessions, and the development of accessible resources, my aim has been to equip educators with the skills and knowledge needed to integrate Jupyter notebooks into their courses.<br>
+        Furthermore, Jupyter4UU aimed to <strong>promote the use of open-source tools</strong>, such as Jupyter and Python, over proprietary tools like MATLAB, aligning with both worldwide trends and Uppsala University's policies. This shift is not solely about eliminating paywalls, ensuring that all students and educators, regardless of their economic background, have equal access to the necessary technological resources. It is also about the substantial advantages in terms of <strong>accessibility, openness, and reproducibility of results.</strong><br>
+        Indeed, the <strong>transparency</strong> inherent in open-source tools enables an environment of openness, which is critical for scientific research and education. Jupyter notebooks facilitate collaborative efforts across different disciplines and institutions and are, therefore, <strong>crucial skills for the future professional development of our educators and students.</strong><br>
+        By adopting open-source tools, we also become <strong>part of a community</strong> that values transparency and shared information. This community-driven approach encourages continuous improvement and innovation, as users can contribute to its development.
+    </span>
+    <button class="read-more-btn" onclick="toggleReadMore()">Read more</button>
 </p>
+
+<script>
+    function toggleReadMore() {
+        const moreText = document.querySelector('.more-content');
+        const dots = document.querySelector('.dots');
+        const btn = document.querySelector('.read-more-btn');
+
+        if (moreText.style.display === 'none') {
+            moreText.style.display = 'inline';
+            dots.style.display = 'none';
+            btn.textContent = 'Read less';
+        } else {
+            moreText.style.display = 'none';
+            dots.style.display = 'inline';
+            btn.textContent = 'Read more';
+        }
+    }
+</script>
     </div>
 
 </body>
