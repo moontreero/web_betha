@@ -67,21 +67,27 @@
             height: auto;
         }
         
-    p {
+     p {
         font-family: 'Arial', sans-serif;
         font-size: 18px;
         line-height: 1.6;
-        margin: 20px 0;
+        margin: 20px auto;  /* centers the block */
         padding: 10px;
-        max-width: 700px; /* limits the width for better readability */
-        color: #333; /* darker grey for a softer look */
+        max-width: 700px;    /* limits width for better readability */
+        color: #333;         /* darker grey for a softer look */
+        text-align: justify; /* optional: to justify the text */
     }
     strong {
         font-weight: bold;
-        color: #1a73e8; /* subtle color for emphasis */
+        color: #1a73e8;      /* subtle color for emphasis */
     }
     br {
         margin-bottom: 20px; /* adds spacing after line breaks */
+    }
+    body {
+        display: flex;
+        justify-content: center; /* centers content horizontally */
+        padding: 20px;
     }
 
     </style>
