@@ -6,43 +6,62 @@
     <style>
         /* Basic styling for the navigation bar */
         nav {
-            background-color: #333; /* Dark background for the nav bar */
-            overflow: hidden; /* Clear floats */
+            background-color: #333;
+            overflow: hidden;
         }
         
         nav ul {
-            list-style-type: none; /* Remove bullet points */
-            margin: 0; /* Remove default margins */
-            padding: 0; /* Remove default padding */
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
         }
         
         nav ul li {
-            float: left; /* Display list items side by side */
+            float: left;
         }
         
         nav ul li a {
-            display: block; /* Make the links fill the list items */
-            color: white; /* White text color */
-            text-align: center; /* Center the text */
-            padding: 14px 20px; /* Padding for clickable area */
-            text-decoration: none; /* Remove underline from links */
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
         }
         
         nav ul li a:hover {
-            background-color: #ddd; /* Light background on hover */
-            color: black; /* Dark text color on hover */
-        }
-          /* Style for Google Scholar link */
-        .scholar-link {
-            display: flex;
-            align-items: center; /* Center items vertically */
-            margin-top: 20px; /* Add some space above */
+            background-color: #ddd;
+            color: black;
         }
 
-        .scholar-link img {
-            width: 30px; /* Set the width of the logo */
-            margin-right: 10px; /* Add some space between the logo and the link */
+        /* Grid container for the text and figure boxes */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 20px;
         }
+
+        /* Style for individual grid items (boxes) */
+        .grid-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Stack all items vertically on small screens */
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -50,16 +69,33 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li> <!-- Link to Home -->
-            <li><a href="research.html">Research</a></li> <!-- Link to Publications -->
-            <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
-
-
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
         </ul>
     </nav>
 
     <h1>Innovation</h1>
-    <p>This is  the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
- 
+    <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
+
+    <!-- Grid container to hold text + figure boxes -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Project Jupyter4UU</h2>
+            <p>The project Jupyter4UU arose from the idea that Uppsala University could benefit from further integrating Jupyter notebooks into its curriculum and research practices.</p>
+            <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo">
+        </div>
+        <div class="grid-item">
+            <h2>Open-Source Tools</h2>
+            <p>Promoting the use of open-source tools such as Jupyter and Python, aligning with Uppsala University's policies.</p>
+            <img src="OpenSourceLogo.png" alt="Open Source Tools">
+        </div>
+        <div class="grid-item">
+            <h2>Workshops</h2>
+            <p>Through a series of workshops, hands-on training sessions, and the development of resources, we equip educators with the skills to use Jupyter notebooks.</p>
+            <img src="WorkshopImage.png" alt="Workshop">
+        </div>
+    </div>
+
 </body>
 </html>
