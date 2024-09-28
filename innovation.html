@@ -12,8 +12,9 @@
         
         nav ul {
             list-style-type: none;
-            margin: 0;
+            margin: 0 auto; /* Center the nav items */
             padding: 0;
+            max-width: 1200px; /* Limit the width of the nav items */
         }
         
         nav ul li {
@@ -33,13 +34,21 @@
             color: black;
         }
 
+        /* Style for the main content */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center; /* Center the heading and paragraph */
+        }
+
         /* Grid container for the text and figure boxes */
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            max-width: 1200px;  /* Maximum width for the grid */
-            margin: 0 auto;     /* Center the grid */
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
         }
 
@@ -48,7 +57,7 @@
             background-color: #f4f4f4;
             border: 1px solid #ccc;
             padding: 20px;
-            text-align: justify; /* Justify text */
+            text-align: justify;
         }
 
         .grid-item img {
@@ -68,7 +77,11 @@
         /* Responsive layout for smaller screens */
         @media (max-width: 600px) {
             .grid-container {
-                grid-template-columns: 1fr; /* Stack all items vertically on small screens */
+                grid-template-columns: 1fr;
+            }
+
+            .content-container {
+                padding: 10px; /* Reduce padding on smaller screens */
             }
         }
 
@@ -85,8 +98,11 @@
         </ul>
     </nav>
 
-    <h1>Innovation</h1>
-    <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
+    <!-- Centered content section -->
+    <div class="content-container">
+        <h1>Innovation</h1>
+        <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
+    </div>
 
     <!-- Grid container to hold text + figure boxes -->
     <div class="grid-container">
