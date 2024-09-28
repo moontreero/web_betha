@@ -87,13 +87,18 @@
             margin: 0 -10px; /* Negative margin to compensate for box margins */
         }
 
-        /* Image styling for responsiveness */
-        img {
-            width: 100%; /* Ensure image takes full width of its container */
+        /* Styling for image container */
+        .image-container {
+            text-align: center; /* Center the image container */
+            margin: 20px 0; /* Add some margin above and below the image */
+        }
+
+        .image-container img {
+            width: 1200px; /* Fixed width for the image */
             height: auto; /* Maintain aspect ratio */
-            max-width: 600px; /* Limit the maximum width */
-            margin: 20px auto; /* Center the image */
-            display: block; /* Block display to center it */
+            max-width: 100%; /* Ensure responsiveness on smaller screens */
+            display: block; /* Ensure the image is displayed as a block element */
+            margin: 0 auto; /* Center the image horizontally */
         }
 
         /* Media queries for mobile devices */
@@ -124,7 +129,7 @@
     <div class="content-container">
         <h1>Welcome to my Website!</h1>
         <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
-        <div style="text-align: center;">
+        <div class="image-container">
             <img src="jose_1.jpg" alt="Picture of Jose">
         </div>
 
@@ -157,18 +162,4 @@
             <section id="publications" class="text-box">
                 <h2>&#128213 Publications</h2>
                 <p>For a complete list of publications visit my profiles in:</p>
-                <!-- Google Scholar Link with Logo -->
-                <div class="scholar-link">
-                    <img src="Google_Scholar_logo.png" alt="Google Scholar Logo">
-                    <a href="https://scholar.google.com/citations?user=CVapQi8AAAAJ&hl=sv&oi=ao" target="_blank">Google Scholar</a>  
-                </div>
-                <div class="scholar-link">
-                    <img src="Orcid.png" alt="Orcid Logo">
-                    <a href="https://orcid.org/0000-0003-2917-8569" target="_blank">Orcid</a>  
-                </div>
-            </section>
-        </div>
-    </div>
-
-</body>
-</html>
+               
