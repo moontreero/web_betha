@@ -55,6 +55,11 @@ nav ul li a:hover {
             padding: 20px;
             text-align: justify; /* Justify text */
         }
+        /* Left-align <a> tags within justified content */
+.content-container a {
+    display: inline-block; /* Prevent link from being stretched by justification */
+    text-align: left; /* Ensure the link itself is left-aligned */
+}
 
         /* Grid container for the text and figure boxes */
         .grid-container {
