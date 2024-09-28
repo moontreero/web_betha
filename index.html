@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>José Montero Amenedo's Personal Website</title>
     <style>
-          /* Full-width background for the navigation bar */
+        /* Full-width background for the navigation bar */
         nav {
             background-color: #333; /* Background color */
             max-width: 1200px; /* Match the width of the rest of the content */
@@ -25,10 +25,10 @@
 
         /* Style for the navigation links */
         nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
+            list-style-type: none; /* Remove bullet points */
+            margin: 0; /* Remove default margins */
+            padding: 0; /* Remove default padding */
+            display: flex; /* Align items in a row */
         }
 
         nav ul li {
@@ -36,16 +36,17 @@
         }
 
         nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            text-decoration: none;
+            display: block; /* Make the links fill the list items */
+            color: white; /* White text color */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline from links */
         }
 
         nav ul li a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: #ddd; /* Light background on hover */
+            color: black; /* Dark text color on hover */
         }
+
         /* Style for Google Scholar link */
         .scholar-link {
             display: flex;
@@ -80,11 +81,13 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="research.html">Research</a></li> <!-- Link to Publications -->
-            <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
-            <li><a href="innovation.html">Innovation</a></li> <!-- Link to Innovation -->
-        </ul>
+        <div class="nav-container">
+            <ul>
+                <li><a href="research.html">Research</a></li> <!-- Link to Publications -->
+                <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
+                <li><a href="innovation.html">Innovation</a></li> <!-- Link to Innovation -->
+            </ul>
+        </div>
     </nav>
 
     <div class="content-container">
