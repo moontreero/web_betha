@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,48 +6,46 @@
     <title>Innovation</title>
     <style>
         /* Full-width background for the navigation bar */
-/* Full-width wrapper for the navigation bar */
-nav {
-    background-color: #333; /* Background color */
-    max-width: 1200px; /* Match the width of the rest of the content */
-    margin: 0 auto; /* Center it horizontally */
-    padding: 0; /* Reset padding */
-}
+        nav {
+            background-color: #333; /* Background color */
+            max-width: 1200px; /* Match the width of the rest of the content */
+            margin: 0 auto; /* Center it horizontally */
+            padding: 0; /* Reset padding */
+        }
 
-/* Constrain both the navigation bar and its background */
-.nav-container {
-    max-width: 1200px; /* Match the width of the rest of the content */
-    margin: 0 auto; /* Center it horizontally */
-    background-color: #333; /* Apply background to match the nav bar */
-    padding: 14px 20px; /* Add some padding to the container */
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-}
+        /* Constrain both the navigation bar and its background */
+        .nav-container {
+            max-width: 1200px; /* Match the width of the rest of the content */
+            margin: 0 auto; /* Center it horizontally */
+            background-color: #333; /* Apply background to match the nav bar */
+            padding: 14px 20px; /* Add some padding to the container */
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+        }
 
-/* Style for the navigation links */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
+        /* Style for the navigation links */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-nav ul li {
-    margin: 0 15px; /* Space between nav items */
-}
+        nav ul li {
+            margin: 0 15px; /* Space between nav items */
+        }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
 
-nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
         /* Style for the main content */
         .content-container {
@@ -55,11 +54,11 @@ nav ul li a:hover {
             padding: 20px;
             text-align: justify; /* Justify text */
         }
+
         /* Left-align <a> tags within justified content */
-.content-container a {
-    display: inline-block; /* Prevent link from being stretched by justification */
-    text-align: left; /* Ensure the link itself is left-aligned */
-}
+        .content-container a {
+            text-align: left; /* Ensure the link itself is left-aligned */
+        }
 
         /* Grid container for the text and figure boxes */
         .grid-container {
@@ -87,6 +86,7 @@ nav ul li a:hover {
         .grid-item a {
             color: #1a73e8;
             text-decoration: none;
+            display: block; /* Ensure the link behaves as a block element */
         }
 
         .grid-item a:hover {
@@ -103,22 +103,20 @@ nav ul li a:hover {
                 padding: 10px; /* Reduce padding on smaller screens */
             }
         }
-
     </style>
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav>
-    <div class="nav-container">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-        </ul>
-    </div>
-</nav>
-
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Centered content section -->
     <div class="content-container">
@@ -131,7 +129,9 @@ nav ul li a:hover {
         <div class="grid-item">
             <h2>Project Jupyter4UU</h2>
             <p>The project Jupyter4UU arose from the idea that Uppsala University could benefit from further integrating Jupyter notebooks into its curriculum and research practices.</p>
-            <a href="education_2.html">Learn more about Jupyter4UU</a>
+            <div style="text-align: left;"> <!-- Wrap link in a div to left-align it -->
+                <a href="education_2.html">Learn more about Jupyter4UU</a>
+            </div>
             <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo">
         </div>
         <div class="grid-item">
