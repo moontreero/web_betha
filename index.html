@@ -72,12 +72,86 @@
             background-color: #f4f4f4; /* Light background color */
             border: 1px solid #ccc; /* Border for the box */
             padding: 20px; /* Padding inside the box */
-            margin: 20px 0; /* Margin above and below the box */
+            margin: 20px; /* Margin around the box */
             border-radius: 5px; /* Rounded corners */
+            flex: 1; /* Allow boxes to grow equally */
+            min-width: 300px; /* Minimum width for each box */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        /* Container for the text boxes */
+        .text-box-container {
+            display: flex; /* Use Flexbox for alignment */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            justify-content: space-between; /* Space boxes evenly */
         }
     </style>
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="research.html">Research</a></li> <!-- Link to Publications -->
+                <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
+                <li><a href="innovation.html">Innovation</a></li> <!-- Link to Innovation -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <h1>Welcome to my Website!</h1>
+        <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
+        <div style="text-align: center;">
+            <img src="jose_1.jpg" alt="Picture of Jose" style="max-width: 100%; height: auto;">
+        </div>
+
+        <!-- Container for text boxes -->
+        <div class="text-box-container">
+            <section id="about-me" class="text-box">
+                <h2>&#128300; About Me</h2>
+                <p> 
+                PhD, Researcher and Docent in Engineering Science with specialization in Solid State Physics.
+                </p>
+                <p>
+                    I am employed at the <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N13-1041">Division of Solid State Physics at The Ångström Laboratory</a>, Uppsala University, Uppsala, Sweden. My research focuses on green nanotechnology, i.e., I am interested in the study of the possible 
+                    applications of nanotechnology to minimize the environmental impact of human activities. 
+                    Particularly, I specialize in developing optically-selective and dynamic coatings for smart and energy-efficient windows, which play a crucial role in sustainable building technologies.
+                </p>
+                <p>
+                    I enjoy teaching and I am committed to educating the next generation of scientists and engineers to address the challenges of sustainable technology and environmental responsibility.
+                </p>
+            </section>
+
+            <section id="education" class="text-box">
+                <h2>&#127891; Education</h2>
+                <p>
+                I earned my PhD in Physics and MSc from Complutense University of Madrid and my BSc from the University of Salamanca. 
+                My professional journey has taken me to prestigious research and higher education institutions across various countries, 
+                including CIEMAT in Spain (where I conducted my PhD research), IFE in Norway, and Uppsala University in Sweden.
+                </p>
+            </section>
+
+            <section id="publications" class="text-box">
+                <h2>&#128213 Publications</h2>
+                <p>For a complete list of publications visit my profiles in:</p>
+                <!-- Google Scholar Link with Logo -->
+                <div class="scholar-link">
+                    <img src="Google_Scholar_logo.png" alt="Google Scholar Logo">
+                    <a href="https://scholar.google.com/citations?user=CVapQi8AAAAJ&hl=sv&oi=ao" target="_blank">Google Scholar</a>  
+                </div>
+                <div class="scholar-link">
+                    <img src="Orcid.png" alt="Orcid Logo">
+                    <a href="https://orcid.org/0000-0003-2917-8569" target="_blank">Orcid</a>  
+                </div>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
+
 
     <!-- Navigation Bar -->
     <nav>
