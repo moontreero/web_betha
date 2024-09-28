@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jose's personal website</title>
+    <title>José Montero Amenedo's Personal Website</title>
     <style>
         /* Basic styling for the navigation bar */
         nav {
             background-color: #333; /* Dark background for the nav bar */
             overflow: hidden; /* Clear floats */
+            max-width: 1200px; /* Match the width of the content */
+            margin: 0 auto; /* Center the nav bar */
         }
-        
+
         nav ul {
             list-style-type: none; /* Remove bullet points */
             margin: 0; /* Remove default margins */
             padding: 0; /* Remove default padding */
+            display: flex; /* Align items in a row */
+            justify-content: flex-start; /* Align items to the left */
         }
-        
+
         nav ul li {
-            float: left; /* Display list items side by side */
+            margin-right: 15px; /* Space between nav items */
         }
-        
+
         nav ul li a {
             display: block; /* Make the links fill the list items */
             color: white; /* White text color */
@@ -28,12 +32,13 @@
             padding: 14px 20px; /* Padding for clickable area */
             text-decoration: none; /* Remove underline from links */
         }
-        
+
         nav ul li a:hover {
             background-color: #ddd; /* Light background on hover */
             color: black; /* Dark text color on hover */
         }
-          /* Style for Google Scholar link */
+
+        /* Style for Google Scholar link */
         .scholar-link {
             display: flex;
             align-items: center; /* Center items vertically */
@@ -44,6 +49,14 @@
             width: 30px; /* Set the width of the logo */
             margin-right: 10px; /* Add some space between the logo and the link */
         }
+
+        /* Style for main content container */
+        .content-container {
+            max-width: 1200px; /* Constrain the content width */
+            margin: 0 auto; /* Center the content */
+            padding: 20px; /* Add some padding */
+            text-align: justify; /* Justify text */
+        }
     </style>
 </head>
 <body>
@@ -53,62 +66,53 @@
         <ul>
             <li><a href="research.html">Research</a></li> <!-- Link to Publications -->
             <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
-            <li><a href="innovation.html">Innovation</a></li> <!-- Link to CV -->
-
+            <li><a href="innovation.html">Innovation</a></li> <!-- Link to Innovation -->
         </ul>
     </nav>
 
-    <h1>Welcome to José Montero Amenedo's personal Website!</h1>
-    <p>This is  the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
-   <div style="text-align: center;">
-    <img src="jose_1.jpg" alt="Picture of Jose" style="max-width: 100%; height: auto;">
-</div>
-    <section id="about-me">
-        <h2> &#128300; About Me</h2>
-        <p> 
-        PhD, Researcher and Docent in Engineering Science with specialisation in Solid State Physics.
-        </p>
-        <!--
-         
-        -->
-    <p>
-        I am employed at the <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N13-1041">Division of Solid State Physics at The Ångström Laboratory</a>, Uppsala University, Uppsala, Sweden. My research focuses on green nanotechnology, i.e., I am interested in the study of the possible 
-        applications of nanotechnology to minimize the environmental impact of human activities.
-        Particulary, I specialize in developing optically-selective and dynamic coatings for smart and energy-efficient windows, which play a crucial role in sustainable building technologies.
-    </p>
-    <p>
-        I enjoy teaching and I am committed to educating the next generation of scientists and engineers to address the challenges of sustainable technology and environmental responsability.
-   </p>
-    
-    
-    
+    <div class="content-container">
+        <h1>Welcome to José Montero Amenedo's Personal Website!</h1>
+        <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
+        <div style="text-align: center;">
+            <img src="jose_1.jpg" alt="Picture of Jose" style="max-width: 100%; height: auto;">
+        </div>
+        <section id="about-me">
+            <h2>&#128300; About Me</h2>
+            <p> 
+            PhD, Researcher and Docent in Engineering Science with specialization in Solid State Physics.
+            </p>
+            <p>
+                I am employed at the <a href="https://www.uu.se/en/contact-and-organisation/staff?query=N13-1041">Division of Solid State Physics at The Ångström Laboratory</a>, Uppsala University, Uppsala, Sweden. My research focuses on green nanotechnology, i.e., I am interested in the study of the possible 
+                applications of nanotechnology to minimize the environmental impact of human activities. 
+                Particularly, I specialize in developing optically-selective and dynamic coatings for smart and energy-efficient windows, which play a crucial role in sustainable building technologies.
+            </p>
+            <p>
+                I enjoy teaching and I am committed to educating the next generation of scientists and engineers to address the challenges of sustainable technology and environmental responsibility.
+            </p>
+        </section>
+        <section id="education">
+            <h2>&#127891; Education</h2>
+            <p>
+             I earned my PhD in Physics and MSc from Complutense University of Madrid and my BSc from the University of Salamanca. 
+             My professional journey has taken me to prestigious research and higher education institutions across various countries, 
+             including CIEMAT in Spain (where I conducted my PhD research), IFE in Norway, and Uppsala University in Sweden.
+            </p>
+        </section>
 
-
-    </section>
-    <section id="Education">
-        <h2> &#127891; Education</h2>
-        <p>
-         I earned my PhD in Physics and MSc from Complutense University of Madrid and my BSc from the University of Salamanca. 
-         My professional journey has taken me to prestigious research and higher education institutions across various countries, 
-         including CIEMAT in Spain (where I conducted my PhD research), IFE in Norway, and Uppsala University in Sweden.
-    </p>
-    </section>
-
-    <section id="publications">
-        <h2> &#128213 Publications</h2>
-        <p>For a complete list of publications visit my profiles in</p>
-    <!-- Google Scholar Link with Logo -->
-    <div class="scholar-link">
-        <img src="Google_Scholar_logo.png" alt="Google Scholar Logo">
-        <a href="https://scholar.google.com/citations?user=CVapQi8AAAAJ&hl=sv&oi=ao" target="_blank">Google Scholar</a>  
+        <section id="publications">
+            <h2>&#128213 Publications</h2>
+            <p>For a complete list of publications visit my profiles in:</p>
+            <!-- Google Scholar Link with Logo -->
+            <div class="scholar-link">
+                <img src="Google_Scholar_logo.png" alt="Google Scholar Logo">
+                <a href="https://scholar.google.com/citations?user=CVapQi8AAAAJ&hl=sv&oi=ao" target="_blank">Google Scholar</a>  
+            </div>
+            <div class="scholar-link">
+                <img src="Orcid.png" alt="Orcid Logo">
+                <a href="https://orcid.org/0000-0003-2917-8569" target="_blank">Orcid</a>  
+            </div>
+        </section>
     </div>
-        <div class="scholar-link">
-        <img src="Orcid.png" alt="Orcid Logo">
-        <a href="https://orcid.org/0000-0003-2917-8569" target="_blank">Orcid</a>  
-    </div>
-
-    </section>
 
 </body>
 </html>
-
