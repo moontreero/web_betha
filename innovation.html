@@ -38,8 +38,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
+            max-width: 1200px;  /* Maximum width for the grid */
+            margin: 0 auto;     /* Center the grid */
             padding: 20px;
-            margin-top: 20px;
         }
 
         /* Style for individual grid items (boxes) */
@@ -47,12 +48,21 @@
             background-color: #f4f4f4;
             border: 1px solid #ccc;
             padding: 20px;
-            text-align: center;
+            text-align: justify; /* Justify text */
         }
 
         .grid-item img {
             max-width: 100%;
             height: auto;
+        }
+
+        .grid-item a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .grid-item a:hover {
+            text-decoration: underline;
         }
 
         /* Responsive layout for smaller screens */
@@ -83,6 +93,7 @@
         <div class="grid-item">
             <h2>Project Jupyter4UU</h2>
             <p>The project Jupyter4UU arose from the idea that Uppsala University could benefit from further integrating Jupyter notebooks into its curriculum and research practices.</p>
+            <a href="education_2.html">Learn more about Jupyter4UU</a>
             <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo">
         </div>
         <div class="grid-item">
