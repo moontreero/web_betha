@@ -3,106 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - My Personal Website</title>
+    <title>Innovation</title>
     <style>
-        /* Basic styling for the navigation bar */
+        /* Full-width background for the navigation bar */
         nav {
-            background-color: #333; /* Dark background for the nav bar */
-            overflow: hidden; /* Clear floats */
-        }
-        
-        nav ul {
-            list-style-type: none; /* Remove bullet points */
-            margin: 0; /* Remove default margins */
-            padding: 0; /* Remove default padding */
-        }
-        
-        nav ul li {
-            float: left; /* Display list items side by side */
-        }
-        
-        nav ul li a {
-            display: block; /* Make the links fill the list items */
-            color: white; /* White text color */
-            text-align: center; /* Center the text */
-            padding: 14px 20px; /* Padding for clickable area */
-            text-decoration: none; /* Remove underline from links */
-        }
-        
-        nav ul li a:hover {
-            background-color: #ddd; /* Light background on hover */
-            color: black; /* Dark text color on hover */
+            background-color: #333; /* Background color */
+            max-width: 1200px; /* Match the width of the rest of the content */
+            margin: 0 auto; /* Center it horizontally */
+            padding: 0; /* Reset padding */
         }
 
-        /* Style for Google Scholar link */
-        .scholar-link {
+        /* Constrain both the navigation bar and its background */
+        .nav-container {
+            max-width: 1200px; /* Match the width of the rest of the content */
+            margin: 0 auto; /* Center it horizontally */
+            background-color: #333; /* Apply background to match the nav bar */
+            padding: 14px 20px; /* Add some padding to the container */
             display: flex;
-            align-items: center; /* Center items vertically */
-            margin-top: 20px; /* Add some space above */
+            justify-content: flex-start; /* Align items to the left */
         }
 
-        .scholar-link img {
-            width: 40px; /* Set the width of the logo */
-            margin-right: 10px; /* Add some space between the logo and the link */
+        /* Style for the navigation links */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Space between nav items */
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style for the main content */
+        .content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: justify; /* Justify text */
+        }
+
+        /* Left-align <a> tags within justified content */
+        .content-container a {
+            text-align: left; /* Ensure the link itself is left-aligned */
+        }
+
+        /* Grid container for the text and figure boxes */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Style for individual grid items (boxes) */
+        .grid-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: justify; /* Justify text in the grid items */
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .grid-item a {
+            color: #1a73e8;
+            text-decoration: none;
+            display: block; /* Ensure the link behaves as a block element */
+        }
+
+        .grid-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .content-container {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
         }
     </style>
 </head>
 <body>
 
-     <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li> <!-- Link to Home -->
-            <li><a href="teaching.html">Teaching</a></li> <!-- Link to CV -->
-            <li><a href="innovation.html">Innovation</a></li> <!-- Link to CV -->
-
-        </ul>
+        <div class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="teaching.html">Teaching</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <h1>Research</h1>
-    
-    <!-- Commented Block Start -->
-    <!--
-    
-    <p>Here is a list of my academic publications and research papers:</p>
 
-    <!-- Example of a list of publications -->
-    <!--  <p>Artículos revisados por pares</p>-->
-    <!--
-<ol>
-    <li>
-        <strong>J. Montero</strong>, Solar Energy Materials and Solar Cells. 272, 112900 (2024). Photochromism in rare earth oxyhydrides for large-area transmittance control. 
-        <a href="https://doi.org/10.1016/j.solmat.2024.112900" target="_blank">DOI: 10.1016/j.solmat.2024.112900</a>
-    </li>
-    <li>
-        J. Montero, P. Svedlindh, L. Österlund. Solid State Communications 378, 115419 (2024). Photo-induced reversible modification of the Curie–Weiss temperature in paramagnetic gadolinium compounds.
-        <a href="https://doi.org/10.1016/j.ssc.2024.115419" target="_blank">DOI: 10.1016/j.ssc.2024.115419</a>
-    </li>
-    <li>
-        K. T. Khairy, Y. Song, J.-H. Yoon, J. Montero, L. Österlund, S. Kim, P. Song. Vacuum, 210, 111887 (2023). Thermochromic properties of vanadium oxide thin films prepared by reactive magnetron sputtering at different oxygen concentrations.
-        <a href="https://doi.org/10.1016/j.vacuum.2023.111887" target="_blank">DOI: 10.1016/j.vacuum.2023.111887</a>
-    </li>
-    <li>
-        S. Kim, J. Montero, J. Yoon, Y. Choi, S. Park, P. Song, L. Österlund, ACS Applied Materials & Interfaces 14, 15756–15764 (2022). Embedded oxidized Ag-Pd-Cu ultrathin metal alloy film prepared at low temperature with excellent electronic, optical, and mechanical properties.
-        <a href="https://doi.org/10.1021/acsami.2c15756" target="_blank">DOI: 10.1021/acsami.2c15756</a>
-    </li>
-    <li>
-        S. Kim, J. Montero, Y. J. Choi, J. Yoon, Y. Choi, P. Song, L. Österlund, Nano Energy 103, 107757 (2022). Embedded nanopattern for selectively suppressed thermal conductivity and enhanced transparency in a transparent conducting oxide film.
-        <a href="https://doi.org/10.1016/j.nanoen.2022.107757" target="_blank">DOI: 10.1016/j.nanoen.2022.107757</a>
-    </li>
-</ol>
-    <!-- Continue with the remaining publications in the same format -->
-    
-    
-<p>For a complete list of publications visit my profiles in</p>
-    <!-- Google Scholar Link with Logo -->
-    <div class="scholar-link">
-        <img src="Google_Scholar_logo.png" alt="Google Scholar Logo">
-        <a href="https://scholar.google.com/citations?user=CVapQi8AAAAJ&hl=sv&oi=ao" target="_blank">Google Scholar</a>  
+    <!-- Centered content section -->
+    <div class="content-container">
+        <h1>Innovation</h1>
+        <p>This is the personal website of José Montero Amenedo, hosted on GitHub Pages.</p>
     </div>
-        <div class="scholar-link">
-        <img src="Orcid.png" alt="Orcid Logo">
-        <a href="https://orcid.org/0000-0003-2917-8569" target="_blank">Orcid</a>  
+
+    <!-- Grid container to hold text + figure boxes -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Project Jupyter4UU</h2>
+            <p>The project Jupyter4UU arose from the idea that Uppsala University could benefit from further integrating Jupyter notebooks into its curriculum and research practices.</p>
+            <div style="text-align: left;"> <!-- Wrap link in a div to left-align it -->
+                <a href="education_2.html">Learn more.</a>
+            </div>
+            <img src="Logo_Jupyter4UU.png" alt="Jupyter4UU Logo">
+        </div>
+        <div class="grid-item">
+            <h2>Open-Source Tools</h2>
+            <p>Promoting the use of open-source tools such as Jupyter and Python, aligning with Uppsala University's policies.</p>
+            <img src="OpenSourceLogo.png" alt="Open Source Tools">
+        </div>
+        <div class="grid-item">
+            <h2>Workshops</h2>
+            <p>Through a series of workshops, hands-on training sessions, and the development of resources, we equip educators with the skills to use Jupyter notebooks.</p>
+            <img src="WorkshopImage.png" alt="Workshop">
+        </div>
     </div>
 
 </body>
