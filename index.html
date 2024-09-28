@@ -68,17 +68,16 @@
         }
 
         /* Style for text boxes */
-        .text-box {
-            background-color: #f4f4f4; /* Light background color */
-            border: 1px solid #ccc; /* Border for the box */
-            padding: 20px; /* Padding inside the box */
-            margin: 10px; /* Margin for spacing */
-            border-radius: 5px; /* Rounded corners */
-            flex: 1; /* Allow boxes to grow equally */
-            min-width: 300px; /* Minimum width for each box */
-            max-width: 1200px; /* Constrain the content width */
-            box-sizing: border-box; /* Include padding in width calculation */     
-        }
+       .text-box {
+        background-color: #f4f4f4; /* Light background color */
+        border: 1px solid #ccc; /* Border for the box */
+        padding: 20px; /* Padding inside the box */
+        margin: 20px 0; /* Margin above and below the box */
+        border-radius: 5px; /* Rounded corners */
+        width: 100%; /* Ensure it takes full width of container */
+        max-width: 1200px; /* Set max-width to match image */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
 
         /* Container for the text boxes */
         .text-box-container {
@@ -88,11 +87,7 @@
             margin: 0 -10px; /* Negative margin to compensate for box margins */
         }
 
-        /* Styling for image container */
-        .image-container {
-            text-align: center; /* Center the image container */
-            margin: 20px 0; /* Add some margin above and below the image */
-        }
+       
 
         .image-container img {
             width: 1200px; /* Fixed width for the image */
