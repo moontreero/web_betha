@@ -4,21 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovation</title>
     <style>
-        /* Basic styling for the navigation bar */
+        /* Full-width background for the navigation bar */
         nav {
             background-color: #333;
             overflow: hidden;
+            width: 100%; /* Ensure the nav bar takes the full width */
         }
         
+        /* Center navigation items inside the bar */
         nav ul {
             list-style-type: none;
-            margin: 0 auto; /* Center the nav items */
+            margin: 0 auto; /* Center the navigation links */
             padding: 0;
-            max-width: 1200px; /* Limit the width of the nav items */
+            max-width: 1200px; /* Limit the width of the navigation links */
+            display: flex; /* Use flexbox to center the links */
+            justify-content: center; /* Center the links horizontally */
         }
         
         nav ul li {
-            float: left;
+            margin: 0 15px; /* Add space between the nav items */
         }
         
         nav ul li a {
@@ -39,7 +43,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            text-align: center; /* Center the heading and paragraph */
+            text-align: justify; /* Justify text */
         }
 
         /* Grid container for the text and figure boxes */
@@ -57,7 +61,7 @@
             background-color: #f4f4f4;
             border: 1px solid #ccc;
             padding: 20px;
-            text-align: justify;
+            text-align: justify; /* Justify text in the grid items */
         }
 
         .grid-item img {
